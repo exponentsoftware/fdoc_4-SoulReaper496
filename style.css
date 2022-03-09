@@ -1,0 +1,186 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Times New Roman", Times, serif;
+}
+.head {
+  background-image: url("background.jpg"); /* The image used */
+  height: 600px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+}
+nav {
+  font-size: large;
+  display: flex;
+  width: 100%;
+  margin: auto;
+  padding: 20px 10px;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.btn {
+  outline: none;
+  display: block;
+  border: solid 1px purple;
+  line-height: 1;
+  padding: 16px 30px;
+  border-radius: 30px;
+  cursor: pointer;
+  color: purple;
+  background-color: white;
+}
+
+.line h1 {
+  text-align: center;
+  font-size: 100px;
+  color: white;
+}
+
+.about {
+  padding: 10px;
+  margin: 100px;
+  text-align: center;
+}
+
+.about i {
+  font-size: 50px;
+  color: purple;
+  padding-left: 2em;
+}
+
+/* content */
+
+.content {
+  background-color: purple;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.column2 {
+  float: left;
+  width: 31%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row2 {
+  margin: 0 -5px;
+}
+
+/* Clear floats after the columns */
+.row2:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column2 {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  color: black;
+  padding: 12px;
+  text-align: center;
+  background-color: white;
+  margin-left: 30px;
+}
+
+.row2 {
+  margin: 60px;
+}
+
+.button {
+  background-color: purple;
+  color: white;
+  height: 30px;
+  width: 100px;
+}
+
+/* skills */
+
+.skills {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.container {
+  background-color: plum;
+  width: 50%;
+  border-radius: 10px;
+  margin-left: 500px;
+}
+
+.skill {
+  background-color: purple;
+  color: white;
+  padding: 1%;
+  text-align: right;
+  font-size: 8px;
+  border-radius: 10px;
+}
+
+.brand {
+  width: 85%;
+}
+.design {
+  width: 95;
+}
+.story {
+  width: 80%;
+}
+.strat {
+  width: 75%;
+}
+
+/* experience */
+.exp {
+  text-align: center;
+  background-color: purple;
+  color: white;
+  padding: 30px;
+}
+
+#column1 {
+  float: left;
+  width: 50%;
+}
+#column2 {
+  float: left;
+  width: 50%;
+  text-align: left;
+}
+#row:after {
+  content: "";
+  display: table;
+  clear: both;
+  margin: 50px;
+}
+
+footer {
+  background-color: black;
+  padding: 20px;
+}
